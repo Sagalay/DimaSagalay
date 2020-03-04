@@ -674,3 +674,16 @@
     padding: 30px 20px;
   }
 }
+
+@media (max-height: 450px) {
+  .arrow {
+    bottom: 40px;
+  }
+
+  .arrow span {
+    width: 25px;
+    height: 25px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+  }
+}
