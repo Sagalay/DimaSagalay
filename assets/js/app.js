@@ -13,7 +13,7 @@ $(function() {
 
     $("html, body").animate(
       {
-        scrollTop: elementOffset - 60
+        scrollTop: elementOffset - 55
       },
       1000
     );
