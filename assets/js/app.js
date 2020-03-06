@@ -10,6 +10,7 @@ $(function() {
     let elementOffset = $(elementId).offset().top;
 
     nav.removeClass("show");
+    navToggle.removeClass("active");
 
     $("html, body").animate(
       {
