@@ -24,5 +24,6 @@ $(function() {
     event.preventDefault();
 
     nav.toggleClass("show");
+    navToggle.toggleClass("active");
   });
 });
