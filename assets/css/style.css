@@ -540,6 +540,7 @@
 .main__bg--mogo,
 .main__bg--logotype,
 .main__bg--conference,
+.main__bg--photography,
 .main__bg--golden {
   -webkit-filter: blur(8px);
   filter: blur(8px);
@@ -576,6 +577,11 @@
 
 .main__bg--golden {
   background: url(../img/works/golden.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main__bg--photography {
+  background: url(../img/works/photography.jpg) no-repeat center;
   background-size: cover;
 }
 
