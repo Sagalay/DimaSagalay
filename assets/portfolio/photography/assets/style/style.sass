@@ -21,12 +21,20 @@ a
 
 // Header
 .header
+  position: relative
   background-color: #fff
+  padding: 30px 0
+
+.header.fixed
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
 .header__wrapper
   display: flex
   justify-content: space-between
-  padding: 30px 0
   align-items: center
 
 .logo
@@ -43,9 +51,6 @@ a
       margin-left: 0
     &:hover
       text-decoration: underline
-  li
-    list-style: none
-    font-size: 16px
 
 // Burger
 .burger
@@ -54,6 +59,7 @@ a
   border: none
   background: none
   cursor: pointer
+  outline: none
 
 .burger__item
   position: relative
@@ -86,7 +92,7 @@ a
 
 // Intro
 .intro
-  height: calc(100vh - 90px) 
+  height: calc(100vh - 50px) 
 
   background: url(../img/background.jpg) no-repeat fixed
   background-size: cover
@@ -262,14 +268,30 @@ a
     padding: 80px 0
 
 @media screen and ( max-width: 800px )
-  .header__wrapper
-    padding: 20px 0
+  .header
+    padding: 10px 0
 
   .intro__title
     font-size: 60px
 
-  .header__nav
+  .nav
     display: none
+    flex-direction: column
+    width: 100%
+    text-align: right
+    background-color: #fff
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #fafafa
+
+    position: absolute
+    top: 100%
+    right: 0
+    a
+      padding: 5px 30px
+  
+  .nav.show
+    display: flex
+    
 
   .burger
     display: block
