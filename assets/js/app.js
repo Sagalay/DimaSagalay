@@ -2,7 +2,8 @@ window.onload = function () {
   // Preloader
   let preloader = document.getElementById("preloader");
   preloader.style.display = "none";
-
+};
+$(function () {
   // Smooth scroll
   let nav = $("#nav");
   let navToggle = $("#navToggle");
@@ -31,4 +32,4 @@ window.onload = function () {
     nav.toggleClass("show");
     navToggle.toggleClass("active");
   });
-};
+});
